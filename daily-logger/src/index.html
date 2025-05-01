@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Logger</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Logger</h1>
+            <p>Keep track of your daily activities and thoughts.</p>
+        </header>
+        <main>
+            <form id="logForm">
+                <textarea id="logEntry" placeholder="Write your log entry here..." required></textarea>
+                <button type="submit">Add Entry</button>
+            </form>
+            <section id="logList">
+                <h2>Your Logs</h2>
+                <ul id="logs"></ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Daily Logger. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
