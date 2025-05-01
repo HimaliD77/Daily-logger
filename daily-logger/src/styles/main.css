@@ -1,14 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    width: 80%;
+    width: 90%;
+    max-width: 800px;
     margin: auto;
-    overflow: hidden;
 }
 
 header {
@@ -16,6 +16,7 @@ header {
     color: #ffffff;
     padding: 20px 0;
     text-align: center;
+    border-radius: 0 0 10px 10px;
 }
 
 h1 {
@@ -26,42 +27,61 @@ form {
     margin: 20px 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-input[type="text"], textarea {
+textarea {
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    height: 120px;
+    padding: 12px;
+    font-size: 1rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
+    resize: vertical;
 }
 
 button {
-    padding: 10px 15px;
-    background: #5cb85c;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #28a745;
     color: white;
+    font-size: 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
 button:hover {
-    background: #4cae4c;
+    background-color: #218838;
+}
+
+.log-section {
+    margin-top: 30px;
 }
 
 .log-entry {
     background: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 15px;
+    border-left: 5px solid #28a745;
     margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .log-entry h3 {
-    margin: 0 0 10px;
+    margin: 0 0 8px;
+    color: #333;
+    font-size: 1rem;
 }
 
 .log-entry p {
     margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    color: #999;
 }
