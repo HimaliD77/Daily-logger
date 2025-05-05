@@ -14,6 +14,7 @@
         </header>
 
         <main>
+            <div class="datetime" id="datetime"></div>
             <form id="log-form">
                 <textarea id="log-input" placeholder="Write your log entry here..." required></textarea>
                 <button type="submit">Add Entry</button>
@@ -23,6 +24,20 @@
                 <h2>Your Logs</h2>
                 <ul id="log-list"></ul>
             </section>
+
+            <section class="task-section">
+                <h2>Task Tracker</h2>
+                <ul id="task-list"></ul>
+                <input type="text" id="task-input" placeholder="Add a new task">
+                <button id="add-task-btn" type="button">Add Task</button>
+            </section>
+
+            <section class="git-section">
+                <h2>Git Commit Message</h2>
+                <input type="text" id="git-commit" placeholder="Enter commit message">
+            </section>
+
+            <button id="copy-markdown-btn" type="button">Copy Markdown Log</button>
         </main>
 
         <footer>
